@@ -33,7 +33,8 @@ function [thrForces, thrMoments] = FzThresholding(filtForces,filtMoments)
 
 %%
 % values are still in FP action based reference system
-FPlateThreshold=-40;     %N: compromise between 20, 40 and 60 (all tested)
+FPlateThreshold=-40;
+%FPlateThreshold=1000; %N: compromise between 20, 40 and 60 (all tested)
 %the same threshold is used for ComputeStancePhase method
     
 for k=1:length(filtForces)

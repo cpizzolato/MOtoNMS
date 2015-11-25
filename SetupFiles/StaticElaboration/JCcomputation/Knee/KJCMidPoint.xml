@@ -40,6 +40,24 @@
 			 <Marker>RMFC</Marker>
 		  </MarkerNames>
 	    </Protocol>	
+         <Protocol>
+	      <Name>GU-RealTime</Name>
+		  <MarkerNames>
+			 <Marker>LFCL</Marker>
+			 <Marker>RFCL</Marker>
+			 <Marker>LFCM</Marker>
+			 <Marker>RFCM</Marker>
+		  </MarkerNames>
+	    </Protocol>	
+         <Protocol>
+	      <Name>GU-RealTime_Fullbody</Name>
+		  <MarkerNames>
+			 <Marker>LFCL</Marker>
+			 <Marker>RFCL</Marker>
+			 <Marker>LFCM</Marker>
+			 <Marker>RFCM</Marker>
+		  </MarkerNames>
+	    </Protocol>	
         <Protocol>
           <Name>UMG-OpenSim</Name>  
 	      <MarkerNames>

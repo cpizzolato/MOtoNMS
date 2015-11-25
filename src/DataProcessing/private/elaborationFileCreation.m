@@ -399,8 +399,9 @@ switch method
                     def_events(2)= {' '};
                 end
             else
-                def_events(1)= {' '};
-                def_events(2)= {' '};
+                load([foldersPath.sessionData trialsList{i} '\Markers']);
+                def_events(1)= {num2str(Markers.FirstFrame)};
+                def_events(2)= {num2str(Markers.LastFrame)};
                 
             end
             

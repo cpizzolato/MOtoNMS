@@ -22,6 +22,15 @@
 			 <Marker>RPSH</Marker>
           </MarkerNames>			
         </Protocol>	
+        <Protocol>
+          <Name>GU-RealTime_Fullbody</Name>  
+	      <MarkerNames>
+			 <Marker>LASH</Marker>
+			 <Marker>RASH</Marker>
+			 <Marker>LPSH</Marker>
+			 <Marker>RPSH</Marker>
+          </MarkerNames>			
+        </Protocol>	
     </MarkersDefinition>  
 </Method>  
 

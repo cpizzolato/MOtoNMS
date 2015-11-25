@@ -365,7 +365,9 @@ save_to_base(1)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                           EMG PROGESSING
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-if isfield(parameters,'EMGsSelected')
+if false
+
+%if isfield(parameters,'EMGsSelected')
     
     disp(' ')
     disp('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%')
@@ -563,8 +565,8 @@ else
 end
 %% -------------------------------------------------------------------------
 
-h = msgbox('Data Processing terminated successfully','Done!');
-uiwait(h)
+%h = msgbox('Data Processing terminated successfully','Done!');
+%uiwait(h)
 
 save_to_base(1)
 % save_to_base() copies all variables in the calling function to the base

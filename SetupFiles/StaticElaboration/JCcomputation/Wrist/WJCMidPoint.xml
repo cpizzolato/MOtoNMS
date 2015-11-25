@@ -22,6 +22,16 @@
 			 <Marker>RWRU</Marker>
           </MarkerNames>			
         </Protocol>	
+        <Protocol>
+          <Name>GU-RealTime_Fullbody</Name>  
+	      <MarkerNames>
+			 <Marker>LWRR</Marker>
+			 <Marker>RWRR</Marker>
+			 <Marker>LWRU</Marker>
+			 <Marker>RWRU</Marker>
+          </MarkerNames>			
+        </Protocol>	
+        
     </MarkersDefinition>  
 </Method>  
 

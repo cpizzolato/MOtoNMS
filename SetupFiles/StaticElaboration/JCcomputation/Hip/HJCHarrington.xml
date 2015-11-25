@@ -39,7 +39,25 @@
 			 <Marker>LPSI</Marker>
 			 <Marker>RPSI</Marker>
 		  </MarkerNames>
-	    </Protocol>		
+	    </Protocol>	
+       <Protocol>
+	      <Name>GU-RealTime</Name>
+		  <MarkerNames>
+			 <Marker>LASI</Marker>
+			 <Marker>RASI</Marker>
+			 <Marker>LPSI</Marker>
+			 <Marker>RPSI</Marker>
+		  </MarkerNames>
+	    </Protocol>
+       <Protocol>
+	      <Name>GU-RealTime_Fullbody</Name>
+		  <MarkerNames>
+			 <Marker>LASI</Marker>
+			 <Marker>RASI</Marker>
+			 <Marker>LPSI</Marker>
+			 <Marker>RPSI</Marker>
+		  </MarkerNames>
+	    </Protocol>
         <Protocol>
           <Name>UMG-OpenSim</Name>  
 	      <MarkerNames>

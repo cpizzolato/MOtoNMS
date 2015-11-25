@@ -22,6 +22,15 @@
 			 <Marker>RLEL</Marker>
           </MarkerNames>			
         </Protocol>	
+        <Protocol>
+          <Name>GU-RealTime_Fullbody</Name>  
+	      <MarkerNames>
+			 <Marker>LELM</Marker>
+			 <Marker>RELM</Marker>
+			 <Marker>LELL</Marker>
+			 <Marker>RELL</Marker>
+          </MarkerNames>			
+        </Protocol>	
     </MarkersDefinition>  
 </Method>  
 
