@@ -48,9 +48,9 @@ for k=1:nEMGSystems
         end
     else
         
-        def_EMGSystems{k,1}='';
-        def_EMGSystems{k,2}='';
-        def_EMGSystems{k,3}='';
+        def_EMGSystems{k,1}='Cometa';
+        def_EMGSystems{k,2}='2000';
+        def_EMGSystems{k,3}='16';
         
     end
 end

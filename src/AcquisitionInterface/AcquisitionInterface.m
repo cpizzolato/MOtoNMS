@@ -80,11 +80,11 @@ cd('..')
 
 laboratoryPath=[pwd filesep fullfile('SetupFiles', 'AcquisitionInterface', 'Laboratories') filesep];   
 cd (originalPath)
-
+def_laboratoryName = 'GU_Undercroft';
 if nargin>0
     [laboratoryName] = uigetfile([ filesep '*.xml'],'Select the .xml file corresponding to the lab',[laboratoryPath oldAcquisition.Laboratory.Name '.xml']);
 else
-    [laboratoryName] = uigetfile([laboratoryPath filesep '*.xml'],'Select the .xml file corresponding to the lab');
+    [laboratoryName] = uigetfile([laboratoryPath filesep '*.xml'],'Select the .xml file corresponding to the lab', [laboratoryPath def_laboratoryName '.xml']);
 end
 
 Pref.ReadAttr=false;
@@ -166,12 +166,12 @@ cd('..')
 cd('..')
 
 markersProtocolPath=[pwd filesep fullfile('SetupFiles','AcquisitionInterface','MarkersProtocols') filesep];   
-
+def_markerProtocol = 'GU-RealTime_HAT';
 cd(markersProtocolPath)
 if nargin>0
     [markersProtocolName] = uigetfile([markersProtocolPath filesep '*.xml'],'Select the .xml file corresponding to the Markers Protocol',[oldAcquisition.MarkersProtocol.Name '.xml']);
 else
-    [markersProtocolName] = uigetfile([markersProtocolPath filesep '*.xml'],'Select the .xml file corresponding to the Markers Protocol');
+    [markersProtocolName] = uigetfile([markersProtocolPath filesep '*.xml'],'Select the .xml file corresponding to the Markers Protocol', [def_markerProtocol '.xml']);
 end
 cd (originalPath)
 
@@ -249,12 +249,12 @@ if nEMGSystem>0
     cd('..')
     
     EMGsProtocolPath=[pwd filesep fullfile('SetupFiles','AcquisitionInterface','EMGsProtocols') filesep];
-    
+    def_EMGsProtocol = 'GU-16muscles-real-time';
     cd(EMGsProtocolPath)
     if nargin>0
         [EMGsProtocolName] = uigetfile([EMGsProtocolPath filesep '*.xml'],'Select the .xml file corresponding to the EMGs Protocol',[oldAcquisition.EMGs.Protocol.Name '.xml']);
     else
-        [EMGsProtocolName] = uigetfile([EMGsProtocolPath filesep '*.xml'],'Select the .xml file corresponding to the EMGs Protocol');
+        [EMGsProtocolName] = uigetfile([EMGsProtocolPath filesep '*.xml'],'Select the .xml file corresponding to the EMGs Protocol', [def_EMGsProtocol '.xml']);
     end
     cd (originalPath)
     

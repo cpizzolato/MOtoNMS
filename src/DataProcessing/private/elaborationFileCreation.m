@@ -400,7 +400,8 @@ switch method
                 end
             else
                 load([foldersPath.sessionData trialsList{i} '\Markers']);
-                def_events(1)= {num2str(Markers.FirstFrame)};
+                framePadding = 50;
+                def_events(1)= {num2str(Markers.FirstFrame+framePadding)};
                 def_events(2)= {num2str(Markers.LastFrame)};
                 
             end

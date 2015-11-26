@@ -27,9 +27,8 @@
 
 %%
 
-function []=ElaborationInterface()
+function []=ElaborationInterface(c3dPath)
 
-clear all
 addSharedPath()
 
 %Comment the following line to disable the splashscreen 
@@ -50,8 +49,12 @@ while newElaboration==1
         %just run an already defined elaboration
         
         %Folders Definitions
-        foldersPath=foldersDefinition ();
+        if nargin < 1
+            foldersPath=foldersDefinition ();
+        else
+            foldersPath=foldersDefinition (c3dPath);
         
+        end
         elaborationPaths{e}=foldersPath.elaboration;
         %Trials Name
         c3dFiles = dir ([foldersPath.inputData filesep '*.c3d']);

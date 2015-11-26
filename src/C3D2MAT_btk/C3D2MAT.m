@@ -32,14 +32,16 @@
 
 %%
 
-function []=C3D2MAT()
+function [sessionFolder]=C3D2MAT(pathName)
 
 addSharedPath()
 runTerminalNote()
 
-%% Selection of input data 
-pathName = uigetdir('Select your input data folder');
-c3dFiles = dir ([pathName filesep '*.c3d']);
+if nargin < 1
+    %% Selection of input data 
+    pathName = uigetdir('Select your input data folsder');
+end
+    c3dFiles = dir ([pathName filesep '*.c3d']);
 
 w = waitbar(0,'Elaborating data...Please wait!');
 

@@ -54,7 +54,7 @@ if nargin>1
     
 else
     for k=1:nTrials
-        def_String{k}='forward|backward|90left|90right|-';
+        def_String{k}='backward|forward|90left|90right|-';
     end
     
 end

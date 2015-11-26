@@ -37,8 +37,8 @@ addpath(pwd)
 cd (originalPath)
 
 %Comment the following line to disable the splashscreen 
-runSplashScreen()
-runTerminalNote()
+%runSplashScreen()
+%runTerminalNote()
 
 %Options
 choice=questdlg('What would you like to do?', ...
